@@ -1,0 +1,135 @@
+.btn-primary {
+  color: $white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: $primary-gradient;
+  border: 0;
+  height: 52px;
+}
+
+.btn-white {
+  padding: 10px 15px;
+  background-color: $white;
+  color: $primary-color;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 0;
+  border-radius: 12px;
+}
+
+.filter-btn {
+  min-width: 54px;
+  max-width: 54px;
+  height: 54px;
+  background-color: rgba($white, 0.6);
+  backdrop-filter: blur(42px);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+}
+
+.btn-border {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba($black, 0.5);
+  border: 1px solid rgba($black, 0.1);
+  background-color: $white;
+  padding: 17px 25px;
+  border-radius: 30px;
+  margin: 0;
+
+  &:hover {
+    color: $black;
+    border: 1px solid rgba($black, 0.1);
+  }
+
+}
+
+.dropdown {
+  .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: $black-800;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: 28px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .dropdown-menu {
+    padding: 20px 15px;
+    background-color: $white;
+    border: 0;
+    box-shadow: 0 6px 14px 0 rgba($black, 0.06);
+    border-radius: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+
+    .dropdown-search-box {
+      background-color: #F9FAFC;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      padding: 16px 15px;
+      margin-bottom: 13px;
+
+      .form-control {
+        flex: 1;
+      }
+    }
+
+    li {
+      a {
+        padding: 13px 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0;
+        color: rgba($black, 0.9);
+        border-bottom: 1px solid rgba($black, 0.1);
+      }
+
+     &:last-child {
+       a {
+         border-bottom: 0;
+       }
+     }
+    }
+
+  }
+
+  &.add-menu-dropdown {
+    .dropdown-menu {
+      width: 100%;
+      left: 0 !important;
+      transform: unset !important;
+      top: 83px !important;
+    }
+  }
+}
+
+.add-button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: $primary-color;
+}

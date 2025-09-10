@@ -1,0 +1,67 @@
+.nav-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba($black-800, 0.2);
+  margin-bottom: 50px;
+  padding: 0;
+  margin-top: 37px;
+
+  .nav-item {
+    .nav-link {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 15px 20px;
+      font-weight: 400;
+      color: #000;
+      font-size: 20px;
+      line-height: 1;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: #000;
+      }
+
+      &.active {
+        font-weight: 600;
+        border-bottom-color: #000;
+        pointer-events: none;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.dashboard-tabs {
+    margin-bottom: 30px;
+  }
+}
+
+.filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba($white, 0.6);
+  backdrop-filter: blur(42px);
+  border-radius: 8px;
+  padding: 3px 6px;
+
+  .time-filter {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0;
+    color: $gray-color;
+    padding: 7px 13px;
+    border-radius: 8px;
+
+    &.active {
+      background-color: $white;
+      box-shadow: 0 0 4px 0 rgba($black, 0.08);
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.stats-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba($white, 0.6);
+  padding: 30px 0;
+  border-radius: 20px;
+  backdrop-filter: blur(42px);
+
+  .stat-box {
+    padding: 0 24px;
+
+    + .stat-box {
+      border-left: 1px solid rgba($black, 0.1);
+    }
+  }
+}
+
+.sales-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  .sales-box {
+    padding: 30px 20px 23px 20px;
+    background-color: rgba($white, 0.6);
+    backdrop-filter: blur(42px);
+    border-radius: 20px;
+  }
+}
+
+.offer-card {
+  background-color: rgba($white, 0.7);
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: rgba($primary-color, 0.2);
+  backdrop-filter: blur(50px);
+  box-shadow: 1px 5px 10px 0 rgba($black, .1);
+  border-radius: 14px;
+  width: 196px;
+  padding: 20px 12px;
+
+  h5 {
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  h6 {
+    color: $black-800;
+    line-height: 1;
+  }
+
+  p {
+    line-height: 1.71;
+    color: $primary-color;
+  }
+
+}

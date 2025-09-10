@@ -1,0 +1,141 @@
+.auth-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .auth-screen-width {
+    max-width: 1035px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .left-screen {
+      max-width: 479px;
+
+      .img-wrapper {
+        margin-bottom: 48px;
+      }
+
+      h2 {
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 1.2;
+        color: $black-900;
+      }
+    }
+
+    .right-screen {
+      max-width: 485px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 16px;
+      background: linear-gradient(152.97deg, rgba($white, 0.2) 0%, rgba($white, 0) 100%);
+      backdrop-filter: blur(42px);
+
+      h5 {
+        color: $black-900;
+        line-height: 1;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 50px;
+      }
+
+
+
+      .forgot-password {
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        a {
+          line-height: 1;
+          color: $primary-color;
+        }
+      }
+
+      .btn-primary {
+        min-width: 167px;
+        padding: 15px 20px;
+      }
+
+      .form-button {
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba($black, 0.1);
+        margin-bottom: 30px;
+      }
+
+      .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 51px;
+            height: 51px;
+            max-width: 51px;
+            border-radius: 50px;
+            background-color: rgba($white, 0.6);
+            backdrop-filter: blur(42px);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.form-action {
+  display: flex;
+  align-items: center;
+  background-color: rgba($white, 0.9);
+  backdrop-filter: blur(42px);
+  box-shadow: 0 4px 14px 1px rgba($white, 0.08);
+  padding: 20px 20px;
+  gap: 20px;
+  border-radius: 20px;
+
+  .form-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0;
+    color: $black-900;
+    margin-bottom: 3px;
+  }
+
+  .form-control {
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0;
+    color: $black-900;
+    background-color: transparent;
+
+    &::placeholder {
+      color: rgba($black-900, 0.2);
+    }
+
+    &:focus-visible,
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &.action-border {
+    border: 1px solid rgba($black, 0.1);
+  }
+}

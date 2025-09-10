@@ -1,0 +1,379 @@
+* {
+  font-family: 'poppins';
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+img {
+  max-width: 100%;
+}
+.fw_100 {
+  font-weight: 100;
+}
+.fw_200 {
+  font-weight: 200;
+}
+.fw_300 {
+  font-weight: 400;
+}
+.fw_400 {
+  font-weight: 400;
+}
+.fw_500 {
+  font-weight: 500;
+}
+.fw_600 {
+  font-weight: 600;
+}
+.fw_700 {
+  font-weight: 700;
+}
+.fw_800 {
+  font-weight: 800;
+}
+
+.fs_55 {
+  font-size: $body_55;
+}
+.fs_54 {
+  font-size: $body_54;
+}
+.fs_52 {
+  font-size: $body_52;
+}
+.fs_50 {
+  font-size: $body_50;
+}
+.fs_48 {
+  font-size: $body_48;
+}
+.fs_46 {
+  font-size: $body_46;
+}
+.fs_44 {
+  font-size: $body_44;
+}
+.fs_42 {
+  font-size: $body_42;
+}
+.fs_40 {
+  font-size: $body_40;
+}
+.fs_38 {
+  font-size: $body_38;
+}
+.fs_36 {
+  font-size: $body_36;
+}
+.fs_34 {
+  font-size: $body_34;
+}
+.fs_32 {
+  font-size: $body_32;
+}
+.fs_30 {
+  font-size: $body_30;
+}
+.fs_28 {
+  font-size: $body_28;
+}
+.fs_26 {
+  font-size: $body_26;
+}
+.fs_24 {
+  font-size: $body_24;
+}
+.fs_22 {
+  font-size: $body_22;
+}
+.fs_20 {
+  font-size: $body_20;
+}
+.fs_18 {
+  font-size: $body_18;
+}
+.fs_16 {
+  font-size: $body_16;
+}
+.fs_14 {
+  font-size: $body_14;
+}
+.fs_12 {
+  font-size: $body_12;
+}
+.btn {
+  padding: 9px 18px;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.position-unset {
+  position: unset !important;
+}
+
+.heading {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 400;
+  color: $black-900;
+}
+
+.main-section {
+  display: flex;
+  height: 100vh;
+  padding: 30px 0 0 30px;
+  gap: 30px;
+  text-align: left;
+  background-image: url("../../images/background.svg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.app-main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+
+  .header-content {
+    padding-right: 30px;
+  }
+
+  .main-section-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.main-content-sidebar {
+  padding-bottom: 30px;
+  display: flex;
+}
+
+
+//
+//.orders-page {
+//  padding: 24px;
+//
+//  .orders-header {
+//    display: flex;
+//    justify-content: space-between;
+//    align-items: center;
+//    margin-bottom: 24px;
+//
+//    h4 {
+//      font-size: 20px;
+//      font-weight: 600;
+//      margin: 0;
+//    }
+//
+//    .header-actions {
+//      display: flex;
+//      align-items: center;
+//      gap: 16px;
+//
+//
+//      .text-fafilter {
+//        color: rgba(147, 87, 204, 1);
+//        font-size: 26px;
+//      }
+//
+//    }
+//    .btn-share {
+//      background-color: rgba(147, 87, 204, 1);
+//      border: none;
+//      color: #fff;
+//      padding: 6px 16px;
+//      padding: 15px 20px;
+//      font-size: 16px;
+//      border-radius: 36px;
+//      font-weight: 600;
+//      cursor: pointer;
+//
+//
+//    }
+//  }
+//}
+//
+//.tab-section {
+//  display: flex;
+//  gap: 20px;
+//  margin-bottom: 20px;
+//  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+//
+//  .tab-button {
+//    position: relative;
+//    padding: 6px 12px;
+//    font-size: 20px;
+//    font-weight: 400;
+//    color: rgba(29, 24, 24, 1);
+//    cursor: pointer;
+//    transition: all 0.2s ease;
+//
+//    &.active {
+//      font-weight: 700;
+//      color: rgba(0, 0, 0, 1);
+//
+//      &::after {
+//        content: "";
+//        position: absolute;
+//        bottom: -2px;
+//        left: 0;
+//        width: 100%;
+//        height: 3px;
+//        background-color: rgba(0, 0, 0, 1);
+//        // border-radius: 2px;
+//      }
+//    }
+//
+//    &:hover {
+//      color: rgba(0, 0, 0, 1);
+//    }
+//  }
+//}
+//
+//.orders-table {
+//  //border-top: 1px solid #e0e0e0;
+//  overflow-x: auto;
+//
+//  .table-header,
+//  .table-row {
+//    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+//    display: grid;
+//    grid-template-columns: repeat(7, 1fr);
+//    padding: 12px 16px;
+//    align-items: center;
+//    font-size: 14px;
+//
+//  }
+//
+//  .table-header {
+//    font-weight: 600;
+//    color: #333;
+//  }
+//
+//  .table-row {
+//
+//    // border-top: 1px solid rgba(0, 0, 0, 0.2);
+//    background-color: rgba($white, 0.4);
+//    border-radius: 20px;
+//    margin-top:10px ;
+//    .badge.paid {
+//      background-color: rgba(62, 125, 39, 1);
+//      color: #fff;
+//      padding: 6px 12px;
+//      border-radius: 10px;
+//      font-size: 12px;
+//      font-weight: 600;
+//    }
+//
+//
+//    .action-icons {
+//      display: flex;
+//      gap: 12px;
+//
+//      .icon-btn {
+//        font-size: 18px;
+//        cursor: pointer;
+//        transition: transform 0.2s ease;
+//
+//        &:hover {
+//          transform: scale(1.1);
+//        }
+//      }
+//
+//      // 👁 Eye icon (View)
+//      .text-pri{
+//        color: rgba(0, 0, 0, 1);
+//      }
+//
+//      // ✏️ Pencil icon (Edit)
+//      .text-dan {
+//        color: rgba(147, 87, 204, 1);
+//      }
+//
+//      // 🗑 Trash icon (Delete)
+//      .text-sec {
+//        color: rgba(255, 91, 91, 1);
+//      }
+//    }
+//
+//  }
+//}
+
+
+
+.graph-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  .graph-bg {
+    background-color: rgba($white, 0.6);
+    backdrop-filter: blur(42px);
+    border-radius: 20px;
+    padding: 15px;
+
+    .chart-title {
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 100%;
+        letter-spacing: 0;
+        margin: 0 0 7px 0;
+        color: $black-900;
+      }
+
+      h6 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: $black-900;
+      }
+    }
+  }
+}
+
+.upload-file {
+  border-radius: 20px;
+  border: 1px dashed rgba($primary-color, 0.5);
+  backdrop-filter: blur(42px);
+  padding: 34px 20px;
+
+  span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    background: linear-gradient(196.57deg, rgba(184, 142, 225, 0.6) -68.62%, $primary-color 88.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
