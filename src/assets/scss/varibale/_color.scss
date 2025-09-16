@@ -1,28 +1,34 @@
-$primary-color: #9357CC;
-$primary-gradient: linear-gradient(100.88deg, rgba(194, 149, 237, 0.6) -22.84%, #9357CC 49.43%);
+$primary-color: #9357cc;
+$primary-gradient: linear-gradient(
+  100.88deg,
+  rgba(194, 149, 237, 0.6) -22.84%,
+  #9357cc 49.43%
+);
 $purple-950: #c295ed;
-
 
 // Primary Color
 $black: #000000;
-$black-900: #1D1818;
-$black-800: #0A0A0A;
-
+$black-900: #1d1818;
+$black-800: #0a0a0a;
 
 $gray-color: #333333;
 
-
-
-$white: #FFFFFF;
-$white-900: #E5E7EE;
+$white: #ffffff;
+$white-900: #e5e7ee;
 
 /* Aux */
-$error:#FF1400;
-$info:#0043CE;
-$success:#3E7D27;
-$warning:#F1C21B;
+$error: #ff1400;
+$info: #0043ce;
+$success: #3e7d27;
+$warning: #f1c21b;
 
+/* border-color */
 
+$border: #0000001a;
+$text: rgb(192, 191, 191);
 
+$btn-border: #fdfefe;
+$btn-text: #00000080;
 
-
+//right-bar
+$rightbar_border: #9357cc33;
