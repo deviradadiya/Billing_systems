@@ -31,7 +31,11 @@
       width: 100%;
       padding: 30px;
       border-radius: 16px;
-      background: linear-gradient(152.97deg, rgba($white, 0.2) 0%, rgba($white, 0) 100%);
+      background: linear-gradient(
+        152.97deg,
+        rgba($white, 0.2) 0%,
+        rgba($white, 0) 100%
+      );
       backdrop-filter: blur(42px);
 
       h5 {
@@ -43,8 +47,6 @@
         line-height: 1.6;
         margin-bottom: 50px;
       }
-
-
 
       .forgot-password {
         margin-top: 20px;
@@ -63,7 +65,7 @@
 
       .form-button {
         padding-bottom: 24px;
-        border-bottom: 1px solid rgba($black, 0.1);
+
         margin-bottom: 30px;
       }
 
@@ -93,7 +95,6 @@
     }
   }
 }
-
 
 .form-action {
   display: flex;
