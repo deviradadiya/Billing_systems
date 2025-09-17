@@ -1,10 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // ✅ import navigation hook
 import FilterIcon from "../../assets/icon/filter.svg";
 import eyes from "../../assets/icon/eyes.svg";
 import message from "../../assets/icon/message.svg";
 import play from "../../assets/icon/play.svg";
 
 const Shopkeeper = () => {
+  const navigate = useNavigate(); // ✅ navigation hook
+
+  const handleView = (id) => {
+    navigate(`/shopkeeperdetail/${id}`); // ✅ route match karega
+  };
+
   return (
     <div className="main-content">
       <div className="row">
@@ -34,7 +41,6 @@ const Shopkeeper = () => {
                     <span className="checkbox-text">Name</span>
                   </label>
                 </th>
-
                 <th>Store Name</th>
                 <th>Contact No</th>
                 <th>Status</th>
@@ -43,6 +49,7 @@ const Shopkeeper = () => {
                 <th>Action</th>
               </tr>
             </thead>
+
             <tbody className="pt_22">
               <tr>
                 <td>
@@ -59,7 +66,12 @@ const Shopkeeper = () => {
                 <td className="payment">12 Mar 2024</td>
                 <td>₹1,25,800</td>
                 <td className="actions">
-                  <img src={eyes} alt="View" />
+                  <img
+                    src={eyes}
+                    alt="View"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleView(1)}
+                  />
                   <img src={message} alt="Message" />
                   <img src={play} alt="Play" />
                 </td>
@@ -80,7 +92,12 @@ const Shopkeeper = () => {
                 <td className="payment">12 Mar 2024</td>
                 <td>₹1,25,800</td>
                 <td className="actions">
-                  <img src={eyes} alt="View" />
+                  <img
+                    src={eyes}
+                    alt="View"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleView(1)}
+                  />
                   <img src={message} alt="Message" />
                   <img src={play} alt="Play" />
                 </td>
@@ -101,7 +118,12 @@ const Shopkeeper = () => {
                 <td className="payment">12 Mar 2024</td>
                 <td>₹1,25,800</td>
                 <td className="actions">
-                  <img src={eyes} alt="View" />
+                  <img
+                    src={eyes}
+                    alt="View"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleView(1)}
+                  />
                   <img src={message} alt="Message" />
                   <img src={play} alt="Play" />
                 </td>
@@ -122,7 +144,12 @@ const Shopkeeper = () => {
                 <td className="payment">12 Mar 2024</td>
                 <td>₹1,25,800</td>
                 <td className="actions">
-                  <img src={eyes} alt="View" />
+                  <img
+                    src={eyes}
+                    alt="View"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleView(1)}
+                  />
                   <img src={message} alt="Message" />
                   <img src={play} alt="Play" />
                 </td>
@@ -143,7 +170,12 @@ const Shopkeeper = () => {
                 <td className="payment">12 Mar 2024</td>
                 <td>₹1,25,800</td>
                 <td className="actions">
-                  <img src={eyes} alt="View" />
+                  <img
+                    src={eyes}
+                    alt="View"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleView(1)}
+                  />
                   <img src={message} alt="Message" />
                   <img src={play} alt="Play" />
                 </td>
@@ -164,7 +196,12 @@ const Shopkeeper = () => {
                 <td className="payment">12 Mar 2024</td>
                 <td>₹1,25,800</td>
                 <td className="actions">
-                  <img src={eyes} alt="View" />
+                  <img
+                    src={eyes}
+                    alt="View"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleView(1)}
+                  />
                   <img src={message} alt="Message" />
                   <img src={play} alt="Play" />
                 </td>
@@ -185,7 +222,12 @@ const Shopkeeper = () => {
                 <td className="payment">12 Mar 2024</td>
                 <td>₹1,25,800</td>
                 <td className="actions">
-                  <img src={eyes} alt="View" />
+                  <img
+                    src={eyes}
+                    alt="View"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleView(1)}
+                  />
                   <img src={message} alt="Message" />
                   <img src={play} alt="Play" />
                 </td>
@@ -206,7 +248,12 @@ const Shopkeeper = () => {
                 <td className="payment">12 Mar 2024</td>
                 <td>₹1,25,800</td>
                 <td className="actions">
-                  <img src={eyes} alt="View" />
+                  <img
+                    src={eyes}
+                    alt="View"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleView(1)}
+                  />
                   <img src={message} alt="Message" />
                   <img src={play} alt="Play" />
                 </td>

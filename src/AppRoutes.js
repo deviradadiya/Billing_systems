@@ -13,6 +13,7 @@ import Sidebar from "./components/Sidebar";
 import Shopkeeper from "./page/Shopkeepers/Shopkeeper";
 import Subscription from "./page/Subscription/Subscription";
 import Support from "./page/Support/Support";
+import Shopkeeperdeatlis from "./page/Shopkeepers/Shopkeeperdeatlis";
 
 function AppContent() {
   const location = useLocation();
@@ -36,6 +37,10 @@ function AppContent() {
 
             <Route path="/" element={<Dashboard />} />
             <Route path="/shopkeeper" element={<Shopkeeper />} />
+            <Route
+              path="/shopkeeperdetail/:id"
+              element={<Shopkeeperdeatlis />}
+            />
             <Route path="/subscription" element={<Subscription />} />
             <Route path="/support" element={<Support />} />
           </Routes>
