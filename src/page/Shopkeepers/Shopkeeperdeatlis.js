@@ -8,6 +8,7 @@ import ItemsIcon from "../../assets/icon/customers-fill.svg";
 import { Bar } from "react-chartjs-2";
 import { useNavigate } from "react-router";
 import close from "../../assets/icon/close.svg";
+import play from "../../assets/icon/play.svg";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -33,6 +34,8 @@ const Shopkeeperdeatlis = () => {
   const [showModal, setShowModal] = useState(false);
   const [currentIndex, setIndex] = useState(0);
   const navigate = useNavigate();
+  const [showMessageModal, setShowMessageModal] = useState(false);
+  const [showSuspendModal, setShowSuspendModal] = useState(false);
   const chartRef = useRef(null);
 
   const [formData, setFormData] = useState({
@@ -122,7 +125,9 @@ const Shopkeeperdeatlis = () => {
                 </div>
 
                 <div className="shopkeeper-btn">
-                  <button>Suspend Account</button>
+                  <button onClick={() => setShowSuspendModal(true)}>
+                    Suspend Account
+                  </button>
                   <button onClick={() => setShowModal(true)}>Message</button>
                 </div>
               </div>
@@ -257,6 +262,54 @@ const Shopkeeperdeatlis = () => {
                     Send Message
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="modal-backdrop fade show"></div>
+        </>
+      )}
+
+      {showSuspendModal && (
+        <>
+          <div className="modal fade show d-block">
+            <div className="modal-dialog modal-dialog-centered play-modal-dialog">
+              <div className="modal-content play-modal-content">
+                <div className="modal-header  play-modal-header p-30">
+                  {/* Centered Icon */}
+                  <div className="play-icon-wrapper">
+                    <img src={play} alt="Delete Icon" />
+                  </div>
+                </div>
+
+                <div className="modal-body text-center  ">
+                  <h3 className="fs_20 fw_600">Confirm Account Suspension</h3>
+
+                  <p className="pt_10 fs_14 fw_400 pb_20">
+                    To proceed, please type the account holder’s full name
+                    below. Suspending this account will restrict access until
+                    reactivated. This action can be reversed later.
+                  </p>
+                  <div className="bill-card p-3 rounded-3 border">
+                    <label className="d-block text-muted small mb-1 text-start">
+                      Enter Account Name
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control border-0 shadow-none fw-semibold p-0"
+                      placeholder="Enter here"
+                    />
+                  </div>
+                  <div className="modal-footer">
+                    <button className="btn btn-cancel fs_20 fw_600">
+                      Cancel
+                    </button>
+                    <button className="btn btn-confirm fs_20 fw_600">
+                      Yes, Suspend
+                    </button>
+                  </div>
+                </div>
+
+                <div className="modal-footer d-flex justify-content-center gap-2 pt_50"></div>
               </div>
             </div>
           </div>

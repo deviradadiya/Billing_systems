@@ -19,7 +19,14 @@
   display: flex;
   gap: 12px;
 }
-
+.shopkeeper-btn button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 36px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+}
 .shopkeeper-btn button {
   padding: 10px 20px;
   border: none;
@@ -38,13 +45,15 @@
   background: $primary-gradient;
   color: $white;
 }
+
+//
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,4 +79,93 @@
   width: 100%;
   padding: 10px;
   resize: none;
+}
+
+.play-modal-dialog {
+  max-width: 480px;
+}
+
+.play-modal-content {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  border: none;
+  overflow: hidden;
+  text-align: center;
+  animation: fadeInScale 0.25s ease-in-out;
+}
+
+.play-modal-header {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-icon-wrapper {
+  height: 60px;
+  width: 60px;
+  background: $play-bg;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.play-modal-content .modal-body {
+  padding: 0px 30px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+  }
+
+  p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+}
+.play-modal-content {
+  .modal-footer {
+    border: none;
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+
+    .btn {
+      border-radius: 24px;
+      padding: 8px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+    }
+
+    .btn-cancel {
+      background: #f3e8ff;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+
+      &:hover {
+        background: #e9d5ff;
+      }
+    }
+
+    .btn-confirm {
+      background: #fff;
+      border: 1px solid #ccc;
+      color: #333;
+
+      &:hover {
+        background: #f3f4f6;
+      }
+    }
+  }
 }
